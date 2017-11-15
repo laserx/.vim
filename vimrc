@@ -294,3 +294,14 @@ map <leader>x :e ~/buffer.md<cr>
 map <leader>pp :setlocal paste!<cr>
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => laserx custom
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:lightline= {
+        \ 'colorscheme': 'one'
+    \ }
+
+
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
+let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']
