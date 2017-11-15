@@ -1,6 +1,5 @@
 execute pathogen#infect()
 
-colorscheme badwolf
 syntax on
 
 set number
