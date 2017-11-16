@@ -305,3 +305,7 @@ let g:lightline= {
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']
+
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+map <C-n> :NERDTreeToggle<CR>
