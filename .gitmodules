@@ -55,3 +55,9 @@
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = https://github.com/wincent/command-t
+[submodule "bundle/vim-wakatime"]
+	path = bundle/vim-wakatime
+	url = http://github.com/wakatime/vim-wakatime
+[submodule "bundle/vim-indent-guides"]
+	path = bundle/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
