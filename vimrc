@@ -323,7 +323,13 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " set gui font(err this)
-set guifont=SauceCodePro\ Nerd\ Font 16
+if has("gui_running")
+    if has("gui_gtk2")
+        set guifont=SauceCodePro\ Nerd\ Font 16
+    elseif has("gui_macvim")
+        set guifont=SauceCodePro\ Nerd\ Font:h16
+    endif
+endif
 
 " hide gui scrollbar
 set guioptions=
