@@ -297,20 +297,22 @@ map <leader>pp :setlocal paste!<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => laserx custom
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" set lightline
 let g:lightline= {
         \ 'colorscheme': 'one'
     \ }
 
-
+" auto open nerd tree and move corsur to main windows
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" map key ctrl + n show or hide nerd tree
 map <C-n> :NERDTreeToggle<CR>
 
-
+"syntastic config
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -320,5 +322,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-
+" set gui font(err this)
 set guifont=Source\ Code\ Pro\ Nerd\ Font\ 16
+
+" hide gui scrollbar
+set guioptions=
