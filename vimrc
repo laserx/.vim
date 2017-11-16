@@ -323,7 +323,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " set gui font(err this)
-set guifont=Source\ Code\ Pro\ Nerd\ Font\ 16
+set guifont=SauceCodePro\ Nerd\ Font 16
 
 " hide gui scrollbar
 set guioptions=
