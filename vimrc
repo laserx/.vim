@@ -299,7 +299,7 @@ map <leader>pp :setlocal paste!<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " set lightline
 let g:lightline= {
-        \ 'colorscheme': 'one'
+        \ 'colorscheme': 'Dracula'
     \ }
 
 " auto open nerd tree and move corsur to main windows
